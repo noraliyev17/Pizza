@@ -1,0 +1,417 @@
+*{
+padding: 0px;
+margin: auto  0 auto 0;
+/* box-sizing: border-box; */
+}
+
+body {
+  background-color: coral;
+  overflow-x: hidden;
+
+  color: rgb(0, 0, 0);
+}
+
+.modal__container-title{
+    color: red;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.modal {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+.modal.active {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__container {
+  background-color: rgb(245, 189, 6);
+  height: 300px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 1000px 10000px;
+  border-radius: 20px;
+}
+.modal__container .fa-check {
+  background-color: green;
+  color: white;
+  font-size: 100px;
+  padding: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.modal__container .fa-x {
+  background-color: tomato;
+  color: white;
+  font-size: 100px;
+  padding: 30px 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.modal__container_x {
+  color: black;
+  font-size: 70px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.container {
+  width: 1445px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.title {
+  font-family: "Bungee Spice";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  color: brown;
+  text-shadow: 3px 0px 7px rgba(245, 189, 6, 0.8),
+    -3px 0px 7px rgba(255, 196, 0, 0.8), 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+.bred {
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+}
+.noni {
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 239, 63);
+  border: 2px solid black;
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+}
+.select {
+  margin-top: 50px;
+}
+
+.birinchi {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 239, 63);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+  border: 2px solid black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.birinchi.active {
+    background: linear-gradient(0.25turn, coral, rgb(255, 170, 0), rgb(255, 239, 63));
+  color: white;
+}
+
+.kattaligi {
+  display: flex;
+  align-items: center;
+  margin-top: 00px;
+  gap: 20px;
+}
+.katta_title {
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 100px;
+}
+.ustiga {
+  display: flex;
+  margin-top: 10px;
+}
+.ustiga_title {
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  margin-top: 100px;
+}
+input {
+  width: 30px;
+  height: 30px;
+}
+label {
+  position: relative;
+  bottom: 10px;
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+.qoshimchalar {
+  display: flex;
+}
+.qosh_title {
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.chiziq {
+  width: 2px;
+  height: 700px;
+  background-color: #000;
+  border: none;
+  position: absolute;
+  margin-top: 50px;
+  left: -800px;
+}
+.pizza {
+  display: flex;
+}
+
+.xamr_turi {
+  position: absolute;
+  right: 2150px;
+  margin-top: 50px;
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+}
+.razmeri {
+  position: absolute;
+  right: 2095px;
+  margin-top: 165px;
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.massage_non {
+  position: absolute;
+  left: 680px;
+  top: 100px;
+}
+.massage_razmer {
+  position: absolute;
+  left: 680px;
+  top: 200px;
+}
+.nimalar_qoshilishi {
+  position: absolute;
+  right: 1825px;
+  top: 240px;
+  width: 400px;
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.massage_non {
+  position: absolute;
+  left: -760px;
+  top: 100px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.massage_razmer {
+  position: absolute;
+  left: -760px;
+  top: 200px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.pomildori_joyi {
+  position: absolute;
+  right: 2135px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+  top: 290px;
+}
+.kurka_joyi {
+  position: absolute;
+  right: 2159px;
+  top: 320px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.zaytun_joyi {
+  position: absolute;
+  right: 2149px;
+  top: 350px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.qoziqorin_joyi {
+  position: absolute;
+  right: 2122px;
+  top: 405px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.bodiring_joyi {
+  position: absolute;
+  right: 2140px;
+  top: 380px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.qazi_joyi {
+  position: absolute;
+  right: 2172px;
+  top: 430px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.buyurtma_olish {
+  position: relative;
+}
+.qoshimcha_narsalar {
+  position: absolute;
+  right: 1825px;
+  top: 470px;
+  width: 400px;
+  font-family: "Concert One";
+  font-style: normal;
+  font-weight: 400;
+}
+.achchiq_joyi {
+  position: absolute;
+  right: 2145px;
+  top: 520px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.sosiska_joyi {
+  position: absolute;
+  right: 2140px;
+  top: 555px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.ketchup_joyi {
+  position: absolute;
+  right: 2144px;
+  top: 587px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.sir_joyi {
+  position: absolute;
+  right: 2144px;
+  top: 615px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.pizza_image {
+  width: 350px;
+  position: absolute;
+  right: 1450px;
+}
+.img_2 {
+  width: 350px;
+  position: absolute;
+  right: 1600px;
+  top: 365px;
+}
+.btn_div {
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(0.25turn, rgb(255, 239, 63), coral, coral);
+  border-radius: 7px;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: coral 7px 5px 6px 0px inset, coral -7px -5px 6px 1px inset;   */
+  position: absolute;
+  right: 2034px;
+  top: 675px;
+}
+.btn_div:hover {
+  background: linear-gradient(0.25turn, coral, coral, rgb(255, 239, 63));
+}
+.btn_div:active {
+border: 2px solid rgb(255, 239, 63);
+}
+.btn_title {
+  font-size: 26px;
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 400;
+}
+.footer{
+    width: 100%;
+    height: 105px;
+    background-color: rgb(255, 239, 63);
+    position: relative;
+    top: 100px;
+   
+}
+.foot_img{
+    width: 100px;
+
+}
+.foot_title{
+    font-family: "Concert One";
+    font-style: normal;
+    font-weight: 400;
+    position: relative; 
+    left: 10px;
+}
+.foot_logo{
+    display: flex;
+    align-items: center;
+}
+a{text-decoration: none;}
+.foot_p{
+    position: relative; 
+    left: 930px;
+    font-size: 20px;
+    font-family: "Tomorrow";
+    font-style: normal;
+    font-weight: 400;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 239, 63);
+    position: fixed;
+    top: 0;
+    z-index: 456789;
+}

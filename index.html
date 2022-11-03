@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="icon" href="./images/1502140004.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <title>Pizza</title>
+  </head>
+  <body>
+
+
+    <div class="navbar">
+        <div class="container">
+            <h1 class="title">Pitsa buyurtma qilish</h1>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__container_x">&times;</div>
+        <i class="fa fa-check" id="check"></i>
+        <h3 class="modal__container-title">Buyurmangiz qabul qilindi</h3>
+
+      </div>
+    </div>
+
+    <h1 class="title">Pitsa buyurtma qilish</h1>
+
+    <div class="container">
+      <div class="pizza">
+        <div class="buyurtma_qilish">
+          <div class="container">
+            <div class="select">
+              <form action="#">
+                <h2 class="bred">Noni qanday bo'lsin ?</h2>
+                <select name="cars" id="cars" class="noni">
+                  <option value="Yupqa">Yupqa</option>
+                  <option value="Qalin">Qalin</option>
+                  <option value="O'rtacha">O'rtacha</option>
+                </select>
+              </form>
+
+              <h3 class="katta_title">Kattaligi</h3>
+
+              <div class="kattaligi">
+                <button value="25 Cm" class="birinchi active">25 cm</button>
+
+                <button value="30 Cm" class="birinchi">30 cm</button>
+
+                <button value="35 Cm" class="birinchi">35 cm</button>
+              </div>
+            </div>
+
+            <h4 class="ustiga_title">Ustiga nima solaylik ?</h4>
+            <div class="ustiga">
+              <div class="ustun1">
+                <form action="#">
+                  <span class="pomidor_span">
+                    <input
+                      type="checkbox"
+                      class="pomidor_input"
+                      name="Pomidor"
+                      value="Pomidor"
+                    />
+                    <label for="vehicle1" class="pomidor_label"> Pomidor</label
+                    ><br />
+                  </span>
+
+                  <span class="kurka_span">
+                    <input
+                      type="checkbox"
+                      class="kurka_input"
+                      name="Kurka"
+                      value="Kurka"
+                    />
+                    <label for="vehicle2" class="kurka_label">
+                      Kurka go'shti</label
+                    ><br />
+                  </span>
+
+                  <span class="zaytun_span">
+                    <input
+                      type="checkbox"
+                      class="zaytun_input"
+                      name="Zaytun"
+                      value="Zaytun"
+                    />
+                    <label for="vehicle3"> Zaytun</label><br /><br />
+                  </span>
+                </form>
+              </div>
+
+              <div class="ustun2">
+                <form action="#">
+                  <span class="bodring_span">
+                    <input
+                      type="checkbox"
+                      class="bodring_input"
+                      name="bodring"
+                      value="Bodring"
+                    />
+                    <label for="tuzlangan" class="tuzlangan">
+                      Tuzlangan bodiring</label
+                    ><br />
+                  </span>
+
+                  <span class="qoziqorin_span">
+                    <input
+                      type="checkbox"
+                      class="qoziqorin_input"
+                      name="qoziqorin_input"
+                      value="Qo'ziqorin"
+                    />
+                    <label for="vehicle2"> Qo'ziqorin</label><br />
+                  </span>
+
+                  <span class="qazi_span">
+                    <input
+                      type="checkbox"
+                      class="qazi_input"
+                      name="qazi"
+                      value="Qazi"
+                    />
+                    <label for="vehicle3"> Qazi</label><br /><br />
+                  </span>
+                </form>
+              </div>
+            </div>
+
+            <h5 class="qosh_title">Qo'shimchalar</h5>
+            <div class="qoshimchalar">
+              <form action="#">
+                <span class="achchiq_span">
+                  <input
+                    type="checkbox"
+                    class="achchiq_input"
+                    name="bodring"
+                    value="Achchiq"
+                  />
+                  <label for="vehicle1"> Achchiq</label>
+                </span>
+
+                <span class="sosiska_span">
+                  <input
+                    type="checkbox"
+                    class="sosiska_input"
+                    name="qoziqorin"
+                    value="Sosiskali"
+                  />
+                  <label for="vehicle2"> Sosiskali</label><br />
+                </span>
+
+                <span class="ketchup_span">
+                  <input
+                    type="checkbox"
+                    class="ketchup_input"
+                    name="bodring"
+                    value="Ketchup"
+                  />
+                  <label for="vehicle1"> Ketchup</label>
+                </span>
+
+                <span class="sir_span">
+                  <input
+                    type="checkbox"
+                    class="sir_input"
+                    name="qoziqorin"
+                    value="Pishloqli"
+                  />
+                  <label for="vehicle2"> Pishloqli</label><br />
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="buyurtma_olish">
+            <div class="container">
+              <hr class="chiziq" />
+
+              <h1 class="xamr_turi">Noni:</h1>
+              <div class="non-turi"><h3 class="massage_non"></h3></div>
+
+              <h1 class="razmeri">Kattaligi:</h1>
+              <div class="razmer-turi"><h3 class="massage_razmer"></h3></div>
+
+              <h1 class="nimalar_qoshilishi">Ustiga solingan narsalar:</h1>
+              <h3 class="pomildori_joyi"></h3>
+              <h3 class="kurka_joyi"></h3>
+              <h3 class="zaytun_joyi"></h3>
+              <h3 class="qoziqorin_joyi"></h3>
+              <h3 class="bodiring_joyi"></h3>
+              <h3 class="qazi_joyi"></h3>
+
+              <h1 class="qoshimcha_narsalar">Qoshimcha:</h1>
+              <h3 class="achchiq_joyi"></h3>
+              <h3 class="sosiska_joyi"></h3>
+              <h3 class="ketchup_joyi"></h3>
+              <h3 class="sir_joyi"></h3>
+              <img class="pizza_image" src="./images/pizza.jpg" alt="Pizza " />
+              <img
+                class="img_2"
+                src="./images/pizza2-removebg-preview (1).png"
+                alt="Pizza2"
+              />
+
+              <div class="btn_div"><p class="btn_title">BUYURTMA</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="foot_logo">
+        <img class="foot_img" src="./images/1502140004.png" alt="">
+        <h1 class="foot_title">PIZZA.UZ</h1>
+        <p class="foot_p container">
+            Crated by: <a href="https://github.com/noraliyev17/" target="_blank">Noraliyev Asliddin</a>
+        </p>
+    </div>
+    </div>
+     
+  </footer>
+
+  <script src="./utilits.js"></script>
+  <script defer src="./script.js"></script>
+</html>
